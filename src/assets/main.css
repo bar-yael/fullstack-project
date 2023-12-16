@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.property {
+    @apply w-full md:w-1/2 px-3 mb-6 md:mb-0 mx-auto
+}
+
+.text-style {
+    @apply block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 mt-4
+}
+
+.response-style {
+    @apply block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2 mt-4
+}
+
+.base-input {
+    @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight text-xs focus:outline-none focus:bg-white focus:border-gray-500
+}
+
+.error-input {
+    @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white
+}
+
+.error-message {
+    @apply text-red-500 text-xs italic
+}
+
+.options {
+    @apply block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 text-xs
+}
+
+.pointer {
+    @apply pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700
+}
+
+.button {
+    @apply bg-white uppercase hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow
+}
