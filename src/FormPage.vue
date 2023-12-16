@@ -73,7 +73,6 @@ const validateForm = () => {
   return Object.values(errors.value).every((error: string) => !error);
 };
 const onSubmit = () => {
-  console.log(form.value.statusIndicatorLights)
   if (validateForm()) {
     response.value = responseHandler.calculateUserResponse(form.value);
   } else {
